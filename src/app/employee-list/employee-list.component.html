@@ -1,0 +1,27 @@
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email</th>
+        <th scope="col">
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <th scope="row">{{emp.id}}</th>
+        <td>{{emp.firstName}}</td>
+        <td>{{emp.lastName}}</td>
+        <td>{{emp.emailId}}</td>
+        <td>
+          <button class="btn btn-primary mr-2" (click)="goToUpdate(emp.id)"> Update </button>
+          <button class="btn btn-danger mr-2" (click)="deleteEmployee(emp.id)"> Delete </button>
+          <button class="btn btn-warning" (click)="goToDetails(emp.id)"> Delete </button>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>

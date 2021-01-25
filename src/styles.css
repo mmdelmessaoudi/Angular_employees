@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap\dist\css\bootstrap.min.css";
+body{
+background-color: rgb(151, 163, 172);
+}
+.formBlackGradient{
+    background-color: #000000;
+    background-image: linear-gradient(290deg,#272729 74% , #1e1d1f 40%);
+    color: rgb(236, 230, 222);
+    
+}
